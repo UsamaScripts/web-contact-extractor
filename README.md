@@ -1,4 +1,4 @@
-# 🌐 Web Contact Extractor
+# � ContactHarvest
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/Node.js-20%20LTS-green.svg)](https://nodejs.org/)
@@ -8,6 +8,8 @@
 A production-ready Node.js REST API that crawls websites and extracts **contact information** — emails, phone numbers, social media profiles, WhatsApp, and more.
 
 Automatically detects whether a site is a **React/Vue/Angular SPA** (renders it with a real browser via Playwright) or a **server-rendered site** (uses fast HTML parsing with Cheerio) — no configuration needed.
+
+> 🔌 **Works with [n8n](https://n8n.io), [Zapier](https://zapier.com), [Make](https://make.com), or any tool that can make HTTP requests.** Built with automation workflows in mind — submit a URL, poll for results, save to your sheet, done.
 
 ---
 
@@ -34,16 +36,16 @@ Automatically detects whether a site is a **React/Vue/Angular SPA** (renders it 
 ### With Docker (Recommended)
 
 ```bash
-git clone https://github.com/your-username/web-contact-extractor.git
-cd web-contact-extractor
+git clone https://github.com/your-username/contactharvest.git
+cd contactharvest
 docker-compose up --build
 ```
 
 ### Without Docker
 
 ```bash
-git clone https://github.com/your-username/web-contact-extractor.git
-cd web-contact-extractor
+git clone https://github.com/your-username/contactharvest.git
+cd contactharvest
 npm install
 npx playwright install chromium
 npm run dev
@@ -265,7 +267,7 @@ Add your own via `excludePaths` in the request body.
 ## 🏗️ Project Structure
 
 ```
-web-contact-extractor/
+contactharvest/
 ├── src/
 │   ├── server.ts              # Express app, routes, middleware
 │   ├── crawler/
