@@ -1,0 +1,40 @@
+{
+  "name": "web-contact-extractor",
+  "version": "1.0.0",
+  "description": "A production-ready Node.js REST API that crawls websites and extracts contact details. Supports async job-based responses for N8N, Zapier, and Make.com integration.",
+  "main": "dist/server.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts"
+  },
+  "keywords": [
+    "web-scraper",
+    "contact-extractor",
+    "crawler",
+    "crawlee",
+    "playwright",
+    "n8n",
+    "zapier",
+    "express",
+    "rest-api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@crawlee/playwright": "^3.12.0",
+    "crawlee": "^3.12.0",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "playwright": "^1.44.0",
+    "uuid": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "@types/uuid": "^10.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
