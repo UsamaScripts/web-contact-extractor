@@ -27,7 +27,6 @@ Automatically detects whether a site is a **React/Vue/Angular SPA** (renders it 
 - 🗑️ **Memory & Disk Cleanup** — `DELETE /job/:id` frees both RAM and Crawlee's on-disk storage
 - 🔌 **N8N / Zapier / Make Ready** — Designed for automation workflow integration
 - 🐳 **Fully Dockerized** — Single command deploy
-- 🚦 **Rate Limited** — Built-in per-IP rate limiting
 
 ---
 
@@ -249,8 +248,6 @@ GET /job/{jobId}  →  check status
 | `NODE_ENV` | `development` | Environment |
 | `MAX_CONCURRENCY` | `3` | Max concurrent crawl jobs |
 | `DEFAULT_TIMEOUT` | `120` | Default crawl timeout (seconds) |
-| `RATE_LIMIT_WINDOW_MS` | `60000` | Rate limit window (ms) |
-| `RATE_LIMIT_MAX` | `10` | Max requests per window per IP |
 
 ---
 
